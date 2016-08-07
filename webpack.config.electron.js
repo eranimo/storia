@@ -8,6 +8,7 @@ export default merge(baseConfig, {
   entry: ['babel-polyfill', './main.development'],
 
   output: {
+    ...baseConfig.output,
     path: __dirname,
     filename: './main.js'
   },

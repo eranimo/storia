@@ -2,8 +2,9 @@
 import webpack from 'webpack';
 import merge from 'webpack-merge';
 import baseConfig from './webpack.config.base';
+import webpackTargetElectronRenderer from 'webpack-target-electron-renderer';
 
-export default merge(baseConfig, {
+const options = merge(baseConfig, {
   debug: true,
 
   devtool: 'cheap-module-eval-source-map',
@@ -43,7 +44,9 @@ export default merge(baseConfig, {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
     })
-  ],
-
-  target: 'electron-renderer'
+  ]
 });
+
+options.target = webpackTargetElectronRenderer(options);
+
+export default options;

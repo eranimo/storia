@@ -7,7 +7,8 @@
       "plugins": [
         "babel-plugin-transform-remove-console",
         "babel-plugin-transform-remove-debugger",
-        "babel-plugin-dev-expression"
+        "babel-plugin-dev-expression",
+        "transform-decorators-legacy"
       ]
     },
     "development": {
