@@ -33,9 +33,9 @@ export default class HeightMap {
 
     this._diamond(0, 0, this.size - 1, this.size - 1);
 
-    this.maxHeight = this.grid.max();
-    this.minHeight = this.grid.min();
-    this.avgHeight = this.grid.mean();
+    this.maxHeight = _.round(this.grid.max());
+    this.minHeight = _.round(this.grid.min());
+    this.avgHeight = _.round(this.grid.mean());
 
     // simple erosion
     for (let x = 0; x < this.size; x++) {

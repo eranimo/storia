@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Map from '../components/map/Map';
+import MapControl from '../components/map/MapControl';
 
-export default class MapPage extends Component {
+export default class MapControlPage extends Component {
   render() {
     return (
-      <Map />
+      <MapControl />
     );
   }
 }

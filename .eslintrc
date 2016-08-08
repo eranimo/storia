@@ -25,6 +25,8 @@ rules:
   import/imports-first: 0
   no-return-assign: 0
   no-underscore-dangle: 0
+  no-mixed-operators: 0
+  arrow-body-style: 0
 plugins:
   - import
   - react
