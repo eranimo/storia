@@ -27,6 +27,7 @@ rules:
   no-underscore-dangle: 0
   no-mixed-operators: 0
   arrow-body-style: 0
+  no-continue: 0
 plugins:
   - import
   - react
